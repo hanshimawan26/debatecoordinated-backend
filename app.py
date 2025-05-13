@@ -9,8 +9,8 @@ from flask_jwt_extended import (
 
 app = Flask(__name__)
 app.secret_key = "your_secret_key"
-app.config["MONGO_URI"] = "mongodb+srv://hanshimawan26:tcq9qTGNueeCulq1@debatecoordinated.ka2kk.mongodb.net/debatecoordinated?retryWrites=true&w=majority&appName=DebateCoordinated"
-app.config["JWT_SECRET_KEY"] = "sredthfrrhergse897621"  # set your JWT secret
+app.config["MONGO_URI"] = ""
+app.config["JWT_SECRET_KEY"] = ""  # set your JWT secret
 
 mongo = PyMongo(app)
 jwt = JWTManager(app)
